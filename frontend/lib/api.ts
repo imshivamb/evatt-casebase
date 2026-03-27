@@ -1,6 +1,6 @@
 const API_BASE =
   process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") ??
-  "http://127.0.0.1:8000";
+  "https://evatt-casebase-1.onrender.com";
 
 export type SearchResult = {
   snippet: string;
