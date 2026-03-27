@@ -138,23 +138,6 @@ data/
 
 ---
 
-## Deploy API on Render (free tier)
-
-Render probes for an open **port** while your process starts. Loading **PyTorch + sentence-transformers** at import time can delay binding and triggers *“No open ports detected”*. This repo **lazy-loads** the embedding model on first ingest/search so `uvicorn` can listen immediately.
-
-**Web Service settings**
-
-| Setting | Value |
-|--------|--------|
-| **Root directory** | `backend` |
-| **Build command** | `pip install -r requirements.txt` |
-| **Start command** | `uvicorn main:app --host 0.0.0.0 --port $PORT` |
-| **Python** | **3.12.x** — Render’s default is **3.14.x**; Chroma 0.6 + Pydantic v1 crashes on 3.14 (`chroma_server_nofile`). This repo includes `backend/.python-version` (`3.12.8`). If Render ignores it, set env **`PYTHON_VERSION=3.12.8`** (fully qualified). |
-
-Set env vars: `OPENAI_API_KEY`, optional `CORS_ORIGINS` / `OPENAI_SUMMARY_MODEL`. Chroma files on disk are **ephemeral** on free instances — expect an empty index after redeploys until someone ingests again.
-
----
-
 ## Production path
 
 - Swap Chroma → **Qdrant / Pinecone** (chunk shape already aligned)
