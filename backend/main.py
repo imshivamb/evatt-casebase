@@ -20,14 +20,31 @@ _OPENAI_KEY = os.getenv("OPENAI_API_KEY", "").strip()
 # Latest capable mini for summaries (override if your org pins a snapshot)
 _OPENAI_MODEL = os.getenv("OPENAI_SUMMARY_MODEL", "gpt-5.4-mini").strip() or "gpt-5.4-mini"
 
+
+def _cors_allow_origins() -> list[str]:
+    """Local dev + production frontend; add more via CORS_ORIGINS (comma-separated)."""
+    origins = [
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "https://evatt-casebase.vercel.app",
+    ]
+    extra = os.getenv("CORS_ORIGINS", "").strip()
+    if extra:
+        origins.extend(o.strip() for o in extra.split(",") if o.strip())
+    seen: set[str] = set()
+    out: list[str] = []
+    for o in origins:
+        if o not in seen:
+            seen.add(o)
+            out.append(o)
+    return out
+
+
 app = FastAPI(title="Evatt Casebase API", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-    ],
+    allow_origins=_cors_allow_origins(),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
