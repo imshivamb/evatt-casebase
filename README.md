@@ -144,4 +144,3 @@ data/
 - Add a **cross-encoder reranker** between retrieval and generation
 - Add **metadata filters** (court, year, jurisdiction) as Chroma `where` clauses
 - Containerise with **Docker Compose** (FastAPI + Next.js)
-- Replace `gpt-4o-mini` with a legal-tuned model or **Claude** via OpenRouter
