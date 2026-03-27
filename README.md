@@ -6,7 +6,7 @@ A minimal **legal case search prototype** using **semantic retrieval** over loca
 
 ## What it does
 
-Paste, upload a `.txt`, or upload a **PDF** → backend splits it into structured chunks with metadata → embeds using [`all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) → stores in a local Chroma vector DB. Then: run a natural language query → retrieve top-K semantically similar passages → display ranked snippets **and** stream a grounded AI summary via `gpt-4o-mini`.
+Paste, upload a `.txt`, or upload a **PDF** → backend splits it into structured chunks with metadata → embeds using [`all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) → stores in a local Chroma vector DB. Then: run a natural language query → retrieve top-K semantically similar passages → display ranked snippets **and** stream a grounded AI summary via `gpt-5.4-mini`.
 
 ---
 
@@ -135,6 +135,23 @@ data/
   sample_employment.txt        Employment law samples
   sample_ip_privacy.txt        IP & privacy law samples
 ```
+
+---
+
+## Deploy API on Render (free tier)
+
+Render probes for an open **port** while your process starts. Loading **PyTorch + sentence-transformers** at import time can delay binding and triggers *“No open ports detected”*. This repo **lazy-loads** the embedding model on first ingest/search so `uvicorn` can listen immediately.
+
+**Web Service settings**
+
+| Setting | Value |
+|--------|--------|
+| **Root directory** | `backend` |
+| **Build command** | `pip install -r requirements.txt` |
+| **Start command** | `uvicorn main:app --host 0.0.0.0 --port $PORT` |
+| **Python** | 3.11.x (set `PYTHON_VERSION` if needed) |
+
+Set env vars: `OPENAI_API_KEY`, optional `CORS_ORIGINS` / `OPENAI_SUMMARY_MODEL`. Chroma files on disk are **ephemeral** on free instances — expect an empty index after redeploys until someone ingests again.
 
 ---
 

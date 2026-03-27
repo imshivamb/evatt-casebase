@@ -1,15 +1,21 @@
 """Local embeddings via sentence-transformers (no API key)."""
 
 from functools import lru_cache
+from typing import TYPE_CHECKING
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
+
+if TYPE_CHECKING:
+    from sentence_transformers import SentenceTransformer
 
 _MODEL_NAME = "all-MiniLM-L6-v2"
 
 
 @lru_cache(maxsize=1)
-def _model() -> SentenceTransformer:
+def _model():
+    # Import lazily so the API can bind to $PORT before PyTorch / ST load (Render health checks).
+    from sentence_transformers import SentenceTransformer
+
     return SentenceTransformer(_MODEL_NAME)
 
 
