@@ -1,0 +1,35 @@
+Source: Chen v Apex Analytics Ltd (illustrative sample)
+
+FACTS
+
+The employee was engaged as a senior data engineer on a twelve-month contract containing a six-month post-termination restraint covering “competing services” in the Asia-Pacific region. After resignation, she accepted a role with a SaaS vendor whose product overlapped partially with her former employer’s analytics suite.
+
+The employer sought an interlocutory injunction restraining commencement of the new role pending trial. The employee argued the restraint was wider than necessary to protect legitimate interests and that her new duties did not involve the same customer verticals.
+
+JUDGMENT
+
+The court applied the conventional test: whether the employer had a protectable interest, whether the restraint was reasonable in scope, duration, and geography, and whether the balance of convenience favoured injunctive relief.
+
+The court found a legitimate interest in confidential methodologies and client-specific pricing models learned in the role. However, the geographic descriptor “Asia-Pacific” was held to be impermissibly broad on the evidence before the court, and the phrase “competing services” lacked the specificity required to give fair notice.
+
+HELD
+
+Interlocutory relief was refused. The court invited the parties to agree a narrowed restraint or to litigate the construction of the clause at final hearing. Costs were reserved.
+
+ORDERS
+
+The application for interlocutory injunction was dismissed.
+
+---
+
+Source: Union v Port Services Pty Ltd (illustrative sample)
+
+FACTS
+
+Industrial action was notified in respect of roster changes introduced without consultation under the applicable enterprise agreement. The employer contended the changes were operational matters reserved to management and did not engage consultation clauses.
+
+REASONS
+
+The court examined whether the roster amendments were “major change” within the meaning of the agreement. Evidence showed predictable impact on take-home pay and predictable weekend patterns for a defined cohort of employees.
+
+The employer’s reliance on managerial prerogative was rejected at the interlocutory stage where serious questions remained to be tried on contractual construction and good-faith consultation obligations.

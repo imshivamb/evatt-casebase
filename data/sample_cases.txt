@@ -1,0 +1,29 @@
+Source: R v Retail Co (illustrative sample)
+
+FACTS
+
+The defendant operated a chain of retail stores. The prosecution alleged a systematic breach of consumer guarantees under the applicable sale-of-goods regime, including misleading representations as to pricing and refund eligibility across multiple outlets over a six-month period.
+
+JUDGMENT
+
+The court held that liability turned on whether the impugned statements were representations of present fact rather than mere puffery. The written terms displayed at point of sale were ambiguous; however, oral assurances given to customers were found to be sufficiently specific to constitute contractual terms incorporated by course of dealing.
+
+The defendant argued that any breach was immaterial because consumers ultimately received the goods purchased. The court rejected that submission, noting that the statutory guarantees protect not only delivery but also conformity with description and fitness for disclosed purpose.
+
+ORDERS
+
+The court ordered injunctive relief restraining the misleading practices and awarded costs to the applicant regulator.
+
+---
+
+Source: Minter v Logistics Pty Ltd (illustrative sample)
+
+FACTS
+
+The plaintiff contracted with the defendant for warehousing and last-mile delivery. A force majeure clause referred to "events beyond reasonable control" but did not expressly mention pandemic-related labour shortages. Performance slipped by eight weeks.
+
+HELD
+
+The court found that the delay was not excused by the force majeure clause as drafted. While labour shortages were externally caused, they did not render performance legally impossible; the defendant remained obliged to use reasonable endeavours, including subcontracting and revised routing.
+
+On the question of damages, the court awarded expectation damages for lost resale opportunities, subject to the plaintiff's duty to mitigate by sourcing alternate fulfilment.

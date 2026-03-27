@@ -1,0 +1,22 @@
+# Dedicated venv strongly recommended (README). Installing into a global env
+# that already has Google Cloud libs caused protobuf 6.x vs google-api-core (<5)
+# conflicts; these pins keep a consistent tree.
+
+fastapi>=0.115.0,<0.121.0
+uvicorn[standard]>=0.32.0,<0.43.0
+pydantic>=2.0,<3
+python-multipart>=0.0.9
+python-dotenv>=1.0.0
+
+protobuf==4.25.8
+chromadb==0.6.3
+# Narrows OpenTelemetry resolution (avoids long pip backtracking with protobuf 4.x)
+opentelemetry-exporter-otlp-proto-grpc==1.27.0
+
+sentence-transformers>=3.0.0,<6.0.0
+
+# PDF ingestion
+pypdf>=4.0.0,<6.0.0
+
+# Streaming AI summaries (optional — set OPENAI_API_KEY in .env to enable)
+openai>=1.30.0,<2.0.0

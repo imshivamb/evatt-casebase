@@ -1,0 +1,35 @@
+Source: LedgerSoft v Meridian Bank (illustrative sample)
+
+FACTS
+
+The plaintiff developed proprietary settlement software licensed to the defendant under terms restricting sublicensing and requiring audit rights. The defendant integrated the software into a white-label platform offered to regional partners. The plaintiff alleged unauthorised disclosure of API documentation and breach of confidentiality schedules.
+
+The defendant argued that “partners” were merely service providers and that no sublicence arose because source code was not delivered in human-readable form.
+
+JUDGMENT
+
+The court emphasised that confidentiality obligations turned on access to and use of trade secrets, not on the technical form in which code was supplied. The integration architecture, if it exposed operational parameters sufficient to replicate timing and routing behaviour, could constitute impermissible use.
+
+On the privacy overlay, correspondence showed processing of transaction metadata for model training without an updated lawful basis under the applicable data protection framework. That issue was bifurcated for separate case management.
+
+HELD
+
+Summary judgment was refused. The court found triable issues on the scope of permitted “partner” access and on whether aggregated analytics crossed the line from de-identified statistics to re-identifiable insights in the hands of the defendant.
+
+ORDERS
+
+Directions were made for expert evidence on system logs and for a confidentiality club for highly sensitive exhibits.
+
+---
+
+Source: In re: HealthHub Patient Records (illustrative sample)
+
+FACTS
+
+A clinic migrated patient records to a cloud-hosted EHR. A misconfigured bucket left backup files briefly reachable via predictable URLs. A security researcher notified the clinic; no evidence of exfiltration was found, but the regulator opened an investigation.
+
+The clinic’s privacy officer asserted reasonable security safeguards were in place and the incident was a transient configuration error promptly remediated.
+
+CONCLUSION
+
+The decision (illustrative) noted that “reasonable security” is contextual and may require mandatory access reviews, least-privilege defaults, and automated checks on public exposure for object storage. The file noted ongoing obligations to notify affected individuals where a real risk of serious harm could not be ruled out on the facts available at the time of assessment.

@@ -1,0 +1,47 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 680 >>
+stream
+BT
+/F1 12 Tf
+50 800 Td
+(Sample Judicial Review - PDF Ingestion Test) Tj
+0 -25 Td (FACTS) Tj
+0 -18 Td (The applicant sought judicial review of a regulatory decision) Tj
+0 -18 Td (that denied a business licence for alleged non-compliance with) Tj
+0 -18 Td (consumer protection disclosure obligations in an online marketplace.) Tj
+0 -25 Td (JUDGMENT) Tj
+0 -18 Td (The court held that the regulator applied the wrong legal standard.) Tj
+0 -18 Td (The duty to disclose material terms arose on contract execution,) Tj
+0 -18 Td (not at the point of marketing. The decision was set aside.) Tj
+0 -25 Td (HELD) Tj
+0 -18 Td (Decision quashed and remitted for reconsideration.) Tj
+0 -18 Td (Costs awarded to the applicant.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000280 00000 n 
+0000001010 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1080
+%%EOF
